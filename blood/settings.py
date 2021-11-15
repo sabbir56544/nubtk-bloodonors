@@ -78,13 +78,33 @@ WSGI_APPLICATION = 'blood.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
+
+DATABASES = {
+
+    'default': {
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'd2qni9hr9tb7u7',
+
+        'USER': 'cwyiudduqzbvwn',
+
+        'PASSWORD': 'd0b16dc5ef6fe554f026d1bc7198a14c63234fb930c536cf33badd2cbe9d1da9',
+
+        'HOST': 'ec2-52-70-107-254.compute-1.amazonaws.com',
+
+        'PORT': '5432',
+
+    }
+
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
